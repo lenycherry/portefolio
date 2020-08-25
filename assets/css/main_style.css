@@ -1,0 +1,63 @@
+
+/*////////////////////////////////MENU/////////////////////////*/
+#topbar{
+height: 50px;
+width: 100%;
+position: fixed;
+display: flex;
+align-items: center;
+background-color: cornflowerblue;
+}
+.topbar_logo{
+    width: max-content;
+    margin-right: auto;
+    padding-left: 20px;
+}
+.navbar{
+   padding-right: 20px ;
+}
+.navbar ul{
+    display: flex;
+}
+/*////////////////////////////////ACCUEIL/////////////////////////*/
+#accueil_bloc{
+    width: 100vw;
+    height: 100vh;
+    background-color: darkcyan;
+}
+/*////////////////////////////////A PROPOS/////////////////////////*/
+#apropos_bloc{
+    width: 100vw;
+    height: 100vh;
+    background-color:white ;
+}
+/*////////////////////////////////SERVICES/////////////////////////*/
+#services_bloc{
+    width: 100vw;
+    height: 100vh;
+    background-color: darkcyan;
+}
+/*////////////////////////////////COMPETENCES/////////////////////////*/
+#competences_bloc{
+    width: 100vw;
+    height: 100vh;
+    background-color:white ;
+}
+/*////////////////////////////////PORTEFOLIO/////////////////////////*/
+#portefolio_bloc{
+    width: 100vw;
+    height: 100vh;
+    background-color: darkcyan;
+}
+/*////////////////////////////////CONTACT/////////////////////////*/
+#contact_bloc{
+    width: 100vw;
+    height: 100vh;
+    background-color:white ;
+}
+/*////////////////////////////////FOOTER/////////////////////////*/
+footer{
+    width: 100vw;
+    height: 100px;
+    background-color: darkcyan;
+}
