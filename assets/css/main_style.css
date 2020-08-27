@@ -1,63 +1,206 @@
+/*////////////////////////////////BODY/////////////////////////*/
+a.anchor {
+    display: block;
+    position: relative;
+    visibility: hidden;
+}
+
+.section_title_bloc {
+    display: flex;
+    align-items: center;
+    width: 4%;
+}
+
+.section_bloc_content {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 93%;
+}
+
+.section_bloc {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
 
 /*////////////////////////////////MENU/////////////////////////*/
-#topbar{
-height: 50px;
-width: 100%;
-position: fixed;
-display: flex;
-align-items: center;
-background-color: cornflowerblue;
+#topbar {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: thistle;
 }
-.topbar_logo{
+
+#topbar h1 {
     width: max-content;
     margin-right: auto;
     padding-left: 20px;
 }
-.navbar{
-   padding-right: 20px ;
+
+.navbar {
+    width: 60%;
 }
-.navbar ul{
+
+.navbar ul {
     display: flex;
+    justify-content: space-evenly;
 }
+
+.navbar li {
+    width: 40px;
+    height: 40px;
+    background-color: blanchedalmond;
+}
+
+.navbar a {
+    position: absolute;
+    padding: 10px;
+}
+
 /*////////////////////////////////ACCUEIL/////////////////////////*/
-#accueil_bloc{
-    width: 100vw;
+#accueil_bloc {
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: darkcyan;
 }
+
+.accueil_title_bloc {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+    background-color: blanchedalmond;
+    width: 35vw;
+    height: 85vh;
+}
+
+.accueil_title_firstName {
+    display: flex;
+    width: 35%;
+    height: 80%;
+    background-color: cornflowerblue;
+}
+
+.accueil_title_firstName span {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align: center;
+    margin: auto;
+}
+
+.accueil_title_dev {
+    display: flex;
+    width: 15%;
+    height: 80%;
+    background-color: cornflowerblue;
+}
+
+.accueil_title_dev h2 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align: center;
+    margin: auto;
+}
+
+.accueil_title_lastName {
+    display: flex;
+    width: 35%;
+    height: 80%;
+    background-color: cornflowerblue;
+}
+
+.accueil_title_lastName span {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align: center;
+    margin: auto;
+}
+
+.accueil_title_web {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 10%;
+    background-color: cornflowerblue;
+}
+
+.accueil_title_web {
+    margin: auto;
+}
+
 /*////////////////////////////////A PROPOS/////////////////////////*/
-#apropos_bloc{
-    width: 100vw;
-    height: 100vh;
-    background-color:white ;
+
+
+#anchor_apropos {
+    top: -20px;
 }
+.section_title_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: turquoise;
+    height: 70vh;
+    width: 100%;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.section_apropos_content {
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+    background-color: teal;
+}
+
 /*////////////////////////////////SERVICES/////////////////////////*/
-#services_bloc{
-    width: 100vw;
+#services_bloc {
     height: 100vh;
     background-color: darkcyan;
 }
+
+#anchor_services {
+    top: -50px;
+}
+
 /*////////////////////////////////COMPETENCES/////////////////////////*/
-#competences_bloc{
-    width: 100vw;
+#competences_bloc {
     height: 100vh;
-    background-color:white ;
+    background-color: white;
 }
+
+#anchor_competences {
+    top: -50px;
+}
+
 /*////////////////////////////////PORTEFOLIO/////////////////////////*/
-#portefolio_bloc{
-    width: 100vw;
+#portefolio_bloc {
     height: 100vh;
     background-color: darkcyan;
 }
-/*////////////////////////////////CONTACT/////////////////////////*/
-#contact_bloc{
-    width: 100vw;
-    height: 100vh;
-    background-color:white ;
+
+#anchor_portefolio {
+    top: -50px;
 }
+
+/*////////////////////////////////CONTACT/////////////////////////*/
+#contact_bloc {
+    height: 100vh;
+    background-color: white;
+}
+
+#anchor_contact {
+    top: -50px;
+}
+
 /*////////////////////////////////FOOTER/////////////////////////*/
-footer{
-    width: 100vw;
+footer {
     height: 100px;
     background-color: darkcyan;
 }
