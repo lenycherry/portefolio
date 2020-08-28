@@ -21,7 +21,8 @@ a.anchor {
 .section_bloc {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
 }
 
 /*////////////////////////////////MENU/////////////////////////*/
@@ -31,6 +32,7 @@ a.anchor {
     position: fixed;
     display: flex;
     align-items: center;
+    z-index: 100;
     background-color: thistle;
 }
 
@@ -153,20 +155,71 @@ a.anchor {
 }
 
 .section_apropos_content {
+    position: relative;
+    display: flex;
+    align-items: center;
     width: 50%;
     height: 50%;
     padding: 10px;
     background-color: teal;
 }
-
+.cv_btn{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    bottom: -12px;
+    right: 85px;
+}
+.cv_btn_square{
+    position: absolute;
+    background: aqua;
+    width: 40px;
+    height: 40px;
+    z-index: 0;
+}
+.link_cv{
+    position: absolute;
+    z-index: 1;
+    padding-left: 10px;
+    padding-top: 5px;
+}
 /*////////////////////////////////SERVICES/////////////////////////*/
 #services_bloc {
-    height: 100vh;
     background-color: darkcyan;
+}
+.section_services{
+    flex-flow: column;
 }
 
 #anchor_services {
     top: -50px;
+}
+.services_article{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+}
+.services_square{
+    width: 100px;
+    height: 100px;
+}
+.services_crea_square{
+background-color: violet;
+}
+.services_seo_square{
+background-color: violet;
+}
+.services_secu_square{
+background-color: violet;
+}
+.services_media_square{
+background-color: violet;
+}
+.services_text{
+    width: 70%;
+    padding: 20px;
+    background-color: white;
 }
 
 /*////////////////////////////////COMPETENCES/////////////////////////*/
@@ -178,7 +231,52 @@ a.anchor {
 #anchor_competences {
     top: -50px;
 }
-
+.comp_tech_bloc{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: teal ;
+    width: 80%;
+    height: 100%;
+}
+.comp_fw_bloc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: teal ;
+    width: 20%;
+    height: 100%;
+}
+.comp_tech_content{
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+}
+.comp_tech_img{
+    width: 100%;
+    height: 50%;
+    background-color: violet;
+}
+.comp_tech_text{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+}
+.comp_fw_content{
+    display: flex;
+    justify-content: flex-end;
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+}
+.comp_fw_content h3{
+    font-size: 0.6em;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align: center;
+}
 /*////////////////////////////////PORTEFOLIO/////////////////////////*/
 #portefolio_bloc {
     height: 100vh;
