@@ -1,8 +1,9 @@
 /*////////////////////////////////BODY/////////////////////////*/
-a.anchor {
+.anchor {
     display: block;
     position: relative;
     visibility: hidden;
+    top: -30px;
 }
 
 .section_title_bloc {
@@ -23,6 +24,14 @@ a.anchor {
     justify-content: center;
     height: auto;
     min-height: 100vh;
+}
+
+.btn_square {
+
+    background: aqua;
+    width: 40px;
+    height: 40px;
+    z-index: 0;
 }
 
 /*////////////////////////////////MENU/////////////////////////*/
@@ -138,11 +147,6 @@ a.anchor {
 }
 
 /*////////////////////////////////A PROPOS/////////////////////////*/
-
-
-#anchor_apropos {
-    top: -20px;
-}
 .section_title_content {
     display: flex;
     justify-content: center;
@@ -163,60 +167,67 @@ a.anchor {
     padding: 10px;
     background-color: teal;
 }
-.cv_btn{
+
+.cv_btn {
     position: absolute;
     width: 100px;
     height: 40px;
     bottom: -12px;
     right: 85px;
 }
-.cv_btn_square{
+
+.cv_btn_square {
     position: absolute;
     background: aqua;
     width: 40px;
     height: 40px;
     z-index: 0;
 }
-.link_cv{
+
+.link_cv {
     position: absolute;
     z-index: 1;
     padding-left: 10px;
     padding-top: 5px;
 }
+
 /*////////////////////////////////SERVICES/////////////////////////*/
 #services_bloc {
     background-color: darkcyan;
 }
-.section_services{
+
+.section_services {
     flex-flow: column;
 }
-
-#anchor_services {
-    top: -50px;
-}
-.services_article{
+.services_article {
     width: 50%;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
-.services_square{
+
+.services_square {
     width: 100px;
     height: 100px;
 }
-.services_crea_square{
-background-color: violet;
+
+.services_crea_square {
+    background-color: violet;
 }
-.services_seo_square{
-background-color: violet;
+
+.services_seo_square {
+    background-color: violet;
 }
-.services_secu_square{
-background-color: violet;
+
+.services_secu_square {
+    background-color: violet;
 }
-.services_media_square{
-background-color: violet;
+
+.services_media_square {
+    background-color: violet;
 }
-.services_text{
+
+.services_text {
     width: 70%;
     padding: 20px;
     background-color: white;
@@ -227,36 +238,36 @@ background-color: violet;
     height: 100vh;
     background-color: white;
 }
-
-#anchor_competences {
-    top: -50px;
-}
-.comp_tech_bloc{
+.comp_tech_bloc {
     display: flex;
     justify-content: space-evenly;
-    background-color: teal ;
+    background-color: teal;
     width: 80%;
     height: 100%;
 }
-.comp_fw_bloc{
+
+.comp_fw_bloc {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: teal ;
+    background-color: teal;
     width: 20%;
     height: 100%;
 }
-.comp_tech_content{
+
+.comp_tech_content {
     display: flex;
     flex-direction: column;
     width: 120px;
 }
-.comp_tech_img{
+
+.comp_tech_img {
     width: 100%;
     height: 50%;
     background-color: violet;
 }
-.comp_tech_text{
+
+.comp_tech_text {
     display: flex;
     align-items: center;
     text-align: center;
@@ -264,27 +275,78 @@ background-color: violet;
     height: 50%;
     background-color: white;
 }
-.comp_fw_content{
+
+.comp_fw_content {
     display: flex;
     justify-content: flex-end;
     width: 100px;
     height: 100px;
     background-color: violet;
 }
-.comp_fw_content h3{
+
+.comp_fw_content h3 {
     font-size: 0.6em;
     writing-mode: vertical-rl;
     text-orientation: upright;
     text-align: center;
 }
+
 /*////////////////////////////////PORTEFOLIO/////////////////////////*/
 #portefolio_bloc {
     height: 100vh;
     background-color: darkcyan;
 }
 
-#anchor_portefolio {
-    top: -50px;
+.portefolio_current {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 70vh;
+    background-color: thistle;
+}
+
+.portefolio_current img {
+    width: 80%;
+    height: 50%;
+    background-color: wheat;
+}
+
+.portefolio_current article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 40%;
+}
+
+.portefolio_current a {
+    position: absolute;
+    padding: 10px;
+}
+
+.portefolio_list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 50%;
+    background-color: rgb(214, 156, 214);
+    height: 70vh;
+}
+
+.portefolio_project {
+    position: relative;
+}
+
+.portefolio_project img {
+    width: 200px;
+    height: 200px;
+}
+
+.portefolio_project figcaption {
+    width: 200px;
+    text-align: center;
 }
 
 /*////////////////////////////////CONTACT/////////////////////////*/
@@ -292,13 +354,32 @@ background-color: violet;
     height: 100vh;
     background-color: white;
 }
-
-#anchor_contact {
-    top: -50px;
+.section_bloc_content form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;  
+    width: min-content;
+    padding: 20px;
 }
-
 /*////////////////////////////////FOOTER/////////////////////////*/
 footer {
+    display: flex;
+    justify-content: space-around;
     height: 100px;
     background-color: darkcyan;
+}
+#infos{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    justify-content: center;
+    height: 100%;
+}
+#social{
+    display: flex;
+    align-items: center;
+}
+.info{
+    display: flex;
 }
