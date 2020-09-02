@@ -1,0 +1,5 @@
+/*////////////////////////////////SQUARE BUTTON/////////////////////////*/
+.navbar li:hover .btn_square{
+    transform: translateX(50px) scale(2, 1) rotate(-90deg);
+    background: white;
+    }
