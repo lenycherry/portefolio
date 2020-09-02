@@ -62,10 +62,9 @@
 }
 .navbar li{
     position: relative;
-    width: 120px;
+    min-width: 120px;
     height: 40px;
     text-align: center;
-    margin: auto 33px;
 }
 .navbar a {
     position: inherit;

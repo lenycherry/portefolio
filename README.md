@@ -1,2 +1,4 @@
-# portefolio
-Personnal portefolio
+# Portefolio
+# Personnal portefolio
+# Installation
+- Run index.html file
