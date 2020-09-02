@@ -27,12 +27,12 @@
 }
 
 .btn_square {
-position: absolute;
+    position: absolute;
     background: aqua;
     width: 40px;
     height: 40px;
     z-index: 0;
-    transition: 1s;
+    transition: 0.3s;
 }
 
 /*////////////////////////////////MENU/////////////////////////*/
@@ -61,12 +61,16 @@ position: absolute;
     justify-content: space-evenly;
 }
 .navbar li{
-    width: 100px;
+    position: relative;
+    width: 120px;
     height: 40px;
+    text-align: center;
+    margin: auto 33px;
 }
 .navbar a {
-    position: absolute;
-    padding: 10px;
+    position: inherit;
+    padding: 12px;
+    top: 12px;
 }
 
 /*////////////////////////////////ACCUEIL/////////////////////////*/

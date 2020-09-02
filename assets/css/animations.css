@@ -1,5 +1,28 @@
 /*////////////////////////////////SQUARE BUTTON/////////////////////////*/
-.navbar li:hover .btn_square{
-    transform: translateX(50px) scale(2, 1) rotate(-90deg);
-    background: white;
+
+@keyframes pivot180 {
+        from {
+            transform: rotate(-180deg);
+        }
+        to {
+          
+        }
+    }
+    
+@keyframes resize {
+        from {
+            height: 40px;
+            width: 40px;
+        }
+        to {
+            height: 40px;
+            width: 120px;
+        }
+    }
+
+    .navbar li:hover .btn_square{
+    animation-duration: 0.3s;
+    animation-delay: 0s, 300ms;
+    animation-name: pivot180, resize;
+    -webkit-animation-fill-mode: forwards;
     }
