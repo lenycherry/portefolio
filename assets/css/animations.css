@@ -1,28 +1,51 @@
 /*////////////////////////////////SQUARE BUTTON/////////////////////////*/
 
 @keyframes pivot180 {
-        from {
-            transform: rotate(-180deg);
-        }
-        to {
-          
-        }
-    }
-    
-@keyframes resize {
-        from {
-            height: 40px;
-            width: 40px;
-        }
-        to {
-            height: 40px;
-            width: 120px;
-        }
+    from {
+        transform: rotate(-180deg);
     }
 
-    .navbar li:hover .btn_square{
+    to {}
+}
+
+@keyframes resize {
+    from {
+        height: 40px;
+        width: 40px;
+    }
+
+    to {
+        height: 40px;
+        width: 120px;
+    }
+}
+
+.navbar li:hover .btn_square {
     animation-duration: 0.3s;
     animation-delay: 0s, 300ms;
     animation-name: pivot180, resize;
     -webkit-animation-fill-mode: forwards;
-    }
+}
+.cv_btn:hover .btn_square{
+ 
+    animation-duration: 0.3s;
+    animation-delay: 0s, 300ms;
+    animation-name: pivot180, resize;
+    -webkit-animation-fill-mode: forwards;
+}
+/*////////////////////////////////HOME TITLE/////////////////////////*/
+
+ .openTitle {
+    margin-right: 0%;
+}
+
+.openTitleLoaded {
+    transition: 1s;
+}
+.revealTitle {
+    transform: translateY(-100%);
+}
+
+.revealTitleLoaded {
+    transition: 1s;
+}

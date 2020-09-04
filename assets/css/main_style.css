@@ -76,6 +76,7 @@
 #accueil_bloc {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: darkcyan;
@@ -84,19 +85,22 @@
 .accueil_title_bloc {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin-top: 70px;
     background-color: blanchedalmond;
-    width: 35vw;
+    width: 60vw;
     height: 85vh;
+    overflow: hidden;
 }
 
 .accueil_title_firstName {
     display: flex;
-    width: 35%;
+    width: 25%;
     height: 80%;
+    transition: 1s ease all;
     background-color: cornflowerblue;
+    margin-right: 20%;
 }
 
 .accueil_title_firstName span {
@@ -108,8 +112,12 @@
 
 .accueil_title_dev {
     display: flex;
-    width: 15%;
-    height: 80%;
+    width: 8%;
+    height: 68%;
+    margin: 0 10px;
+    transition: 1s ease all;
+transform: translateY(0);
+    position: absolute;
     background-color: cornflowerblue;
 }
 
@@ -122,8 +130,9 @@
 
 .accueil_title_lastName {
     display: flex;
-    width: 35%;
+    width: 25%;
     height: 80%;
+    transition: 1s ease all;
     background-color: cornflowerblue;
 }
 
@@ -131,19 +140,6 @@
     writing-mode: vertical-rl;
     text-orientation: upright;
     text-align: center;
-    margin: auto;
-}
-
-.accueil_title_web {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-    height: 10%;
-    background-color: cornflowerblue;
-}
-
-.accueil_title_web {
     margin: auto;
 }
 
@@ -177,18 +173,10 @@
     right: 85px;
 }
 
-.cv_btn_square {
-    position: absolute;
-    background: aqua;
-    width: 40px;
-    height: 40px;
-    z-index: 0;
-}
-
 .link_cv {
     position: absolute;
     z-index: 1;
-    padding-left: 10px;
+    padding-left: 20px;
     padding-top: 5px;
 }
 
@@ -201,15 +189,15 @@
     flex-flow: column;
 }
 .services_article {
-    width: 50%;
+    width: 75%;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
 
 .services_square {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
 }
 
 .services_crea_square {
