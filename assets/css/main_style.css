@@ -198,21 +198,6 @@ transform: translateY(0);
 .services_square {
     width: 130px;
     height: 130px;
-}
-
-.services_crea_square {
-    background-color: violet;
-}
-
-.services_seo_square {
-    background-color: violet;
-}
-
-.services_secu_square {
-    background-color: violet;
-}
-
-.services_media_square {
     background-color: violet;
 }
 
@@ -230,6 +215,7 @@ transform: translateY(0);
 .comp_tech_bloc {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     background-color: teal;
     width: 80%;
     height: 100%;
@@ -247,13 +233,21 @@ transform: translateY(0);
 .comp_tech_content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 120px;
+    height: 320px;
+    position: relative;
+    cursor: pointer;
 }
 
 .comp_tech_img {
     width: 100%;
-    height: 50%;
+    height: 100%;
     background-color: violet;
+    z-index: 3;
+    pointer-events: none;
+    transition: all ease 1s ;
+    backface-visibility: hidden;
 }
 
 .comp_tech_text {
@@ -261,8 +255,12 @@ transform: translateY(0);
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 50%;
+    height: 100%;
     background-color: white;
+    position: absolute;
+    pointer-events: none;
+    transform: rotateY(180deg);
+    transition: all ease 1s ;
 }
 
 .comp_fw_content {
@@ -287,7 +285,8 @@ transform: translateY(0);
 }
 
 .portefolio_current {
-    display: flex;
+    position: relative;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -298,7 +297,7 @@ transform: translateY(0);
 
 .portefolio_current img {
     width: 80%;
-    height: 50%;
+    height: 60%;
     background-color: wheat;
 }
 
@@ -309,16 +308,39 @@ transform: translateY(0);
     width: 80%;
     height: 40%;
 }
+.portefolio_current h2{
+    margin:10px 0;
 
-.portefolio_current a {
+}
+.portefolio_current p{
+    margin-bottom: 10px;
+
+}
+.close_current_window{
+    width: 0;
+    height: 0;
+    right: 0;
+    border-top: 35px solid transparent;
+    border-right: 25px solid red;
+    border-bottom: 35px solid transparent;
     position: absolute;
-    padding: 10px;
+}
+.link_btn{
+    width: 100px;
+    height: 40px;
+    position: relative;
+}
+.link_btn a {
+    position: absolute;
+    z-index: 1;
+    padding-left: 20px;
+    padding-top: 10px;
 }
 
 .portefolio_list {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 50%;
     background-color: rgb(214, 156, 214);
     height: 70vh;
@@ -326,18 +348,34 @@ transform: translateY(0);
 
 .portefolio_project {
     position: relative;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
 }
 
 .portefolio_project img {
-    width: 200px;
-    height: 200px;
+   width: 100%;
+   height: 100%;
 }
 
 .portefolio_project figcaption {
-    width: 200px;
-    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    transition: all ease 0.7s;
 }
-
+.portefolio_project:hover figcaption{
+  opacity: 1;
+}
+.pagination_bloc{
+    display: flex;
+    background-color: white;
+}
 /*////////////////////////////////CONTACT/////////////////////////*/
 #contact_bloc {
     height: 100vh;
