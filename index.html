@@ -8,11 +8,12 @@
     <link href="assets/css/resetcss.css" rel="stylesheet">
     <link href="assets/css/main_style.css" rel="stylesheet">
     <link href="assets/css/animations.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
     <title>C.G Portefolio</title>
 </head>
 
 <body>
-    <div id="topbar">
+    <header>
         <h1 class="topbar_logo"><a class="link_logo" href="#anchor_accueil">CELIA GAUDIN</a></h1>
         <nav class="navbar">
             <ul>
@@ -33,10 +34,25 @@
                 </li>
             </ul>
         </nav>
-    </div>
+        <nav class="main_menu_burger">
+            <div class="nav_wrapper">
+                <input type="checkbox" id="menu_checkbox" class="menu_checkbox">
+                <label for="menu_checkbox" class="menu-toggle">
+                    <div class="square_menu"></div>
+                </label>
+                <ul class="menu_burger">
+                    <li><a href="#anchor_apropos">A propos</a></li>
+                    <li><a href="#anchor_services">Services</a></li>
+                    <li><a href="#anchor_competences">Compétences</a></li>
+                    <li><a href="#anchor_portefolio">Portefolio</a></li>
+                    <li><a href="#anchor_contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <a id="anchor_accueil" class="anchor"></a>
-    <div id="accueil_bloc" class="bloc">
+    <div id="accueil_bloc">
         <div class="accueil_title_bloc">
             <div class="accueil_title_firstName openTitle"><span>CELIA</span></div>
             <div class="accueil_title_dev revealTitle">
@@ -127,29 +143,37 @@
                 <h2 class="section_title_competences">COMPETENCES</h2>
             </div>
         </div>
-        <div class="section_bloc_content">
+        <div class="section_bloc_content competences_bloc_content">
             <div class="comp_tech_bloc">
                 <figure class="comp_tech_content comp_html">
                     <img class="comp_tech_img comp_tech_img_html" src="" alt="">
-                    <figcaption class="comp_tech_text comp_tech_text_html"><h2>HTML5</h2>Lorem ipsum dolor sit amet consectetur
-                        adipisicing</figcaption>
+                    <figcaption class="comp_tech_text comp_tech_text_html">
+                        <h2>HTML5</h2>Lorem ipsum dolor sit amet consectetur
+                        adipisicing
+                    </figcaption>
                 </figure>
 
                 <figure class="comp_tech_content comp_css">
                     <img class="comp_tech_img comp_tech_img_css" src="" alt="">
-                    <figcaption class="comp_tech_text comp_tech_text_css"><h2>CSS3</h2> ipsum dolor sit amet consectetur
-                        adipisicing</figcaption>
+                    <figcaption class="comp_tech_text comp_tech_text_css">
+                        <h2>CSS3</h2> ipsum dolor sit amet consectetur
+                        adipisicing
+                    </figcaption>
                 </figure>
 
                 <figure class="comp_tech_content comp_js">
                     <img class="comp_tech_img comp_tech_img_js" src="" alt="">
-                    <figcaption class="comp_tech_text comp_tech_text_js"><h2>Javascript ES6</h2>Lorem ipsum dolor sit amet consectetur
-                        adipisicing</figcaption>
+                    <figcaption class="comp_tech_text comp_tech_text_js">
+                        <h2>Javascript ES6</h2>Lorem ipsum dolor sit amet consectetur
+                        adipisicing
+                    </figcaption>
                 </figure>
                 <figure class="comp_tech_content comp_php">
                     <img class="comp_tech_img comp_tech_img_php" src="" alt="">
-                    <figcaption class="comp_tech_text comp_tech_text_php"><h2>PHP7</h2>Lorem ipsum dolor sit amet consectetur
-                        adipisicing</figcaption>
+                    <figcaption class="comp_tech_text comp_tech_text_php">
+                        <h2>PHP7</h2>Lorem ipsum dolor sit amet consectetur
+                        adipisicing
+                    </figcaption>
                 </figure>
             </div>
             <div class="comp_fw_bloc">
@@ -175,8 +199,7 @@
                 <h2 class="section_title_portefolio">PORTEFOLIO</h2>
             </div>
         </div>
-        <div class="section_bloc_content">
-
+        <div class="section_bloc_content portefolio_bloc_content">
             <div id="portefolio_current01" class="portefolio_current invisible_window">
                 <div class="close_current_window"></div>
                 <img id="portefolio_current_img01" class="portefolio_current_img" src="" alt="">

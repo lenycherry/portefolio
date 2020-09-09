@@ -11,6 +11,17 @@
     align-items: center;
     width: 4%;
 }
+.section_title_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: turquoise;
+    height: 70vh;
+    width: 100%;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    z-index: 3;
+}
 
 .section_bloc_content {
     align-items: center;
@@ -22,8 +33,6 @@
 .section_bloc {
     display: flex;
     justify-content: center;
-    height: auto;
-    min-height: 100vh;
 }
 
 .btn_square {
@@ -36,29 +45,29 @@
 }
 
 /*////////////////////////////////MENU/////////////////////////*/
-#topbar {
+header {
     height: 50px;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     display: flex;
-    align-items: center;
     z-index: 100;
     background-color: thistle;
 }
-
-#topbar h1 {
-    width: max-content;
-    margin-right: auto;
+.topbar_logo {
+    width: 40%;
     padding-left: 20px;
+    align-self: center;
 }
 
 .navbar {
-    width: 60%;
+    width: 50%;
 }
 
 .navbar ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
 }
 .navbar li{
     position: relative;
@@ -74,7 +83,6 @@
 
 /*////////////////////////////////ACCUEIL/////////////////////////*/
 #accueil_bloc {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,20 +150,11 @@ transform: translateY(0);
     text-align: center;
     margin: auto;
 }
-.section_title_content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: turquoise;
-    height: 70vh;
-    width: 100%;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    z-index: 3;
-}
+
 /*////////////////////////////////A PROPOS/////////////////////////*/
-
-
+.apropos_bloc{
+    min-height: 100vh;
+}
 .section_apropos_content {
     position: relative;
     display: flex;
@@ -210,7 +209,6 @@ transform: translateY(0);
 
 /*////////////////////////////////COMPETENCES/////////////////////////*/
 #competences_bloc {
-    height: 100vh;
     background-color: white;
 }
 .comp_tech_bloc {
