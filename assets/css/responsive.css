@@ -6,6 +6,7 @@
 
     .section_title_bloc {
         width: 100%;
+        margin-top: 50px;
     }
 
     .section_bloc {
@@ -22,10 +23,19 @@
         margin: auto;
         margin-bottom: 20px;
     }
+
 }
 
 /*////////////////////////////////HEADER/////////////////////////*/
+@media all and (max-width: 1000px) {
+    .topbar_logo{
+        width: 22%;
+    }
+}
 @media all and (max-device-width: 768px) {
+    .header{
+        position: sticky;
+    }
     .navbar {
         display: none;
     }
@@ -36,6 +46,7 @@
     }
 
     .main_menu_burger {
+        display: block;
         margin-top: 5px;
         width: 30%;
     }
@@ -88,13 +99,6 @@
     }
 }
 
-@media all and (min-width: 1024px) {
-    .main_menu_burger {
-        display: none;
-    }
-
-}
-
 /*////////////////////////////////ACCUEIL/////////////////////////*/
 @media all and (max-device-width: 768px) {
     .accueil_title_bloc {
@@ -111,7 +115,9 @@
     #apropos_bloc {
         min-height: 100vh;
     }
-
+.apropos_bloc_content{
+    height: 400px;
+}
     .section_apropos_content {
         width: 80%;
         height: 65%;
@@ -125,6 +131,7 @@
         width: 100%;
     }
 }
+/*////////////////////////////////SERVICES////////////////////////////*/
 
 /*////////////////////////////////COMPETENCES/////////////////////////*/
 @media all and (max-device-width: 768px) {
@@ -144,6 +151,7 @@
     .comp_fw_bloc {
         flex-direction: row;
         width: 100%;
+        margin-top: 10px;
     }
 }
 
@@ -155,16 +163,13 @@
 
     .portefolio_current {
         width: 100%;
-        height: 315px;
+        height: 355px;
+        flex-direction: row;
     }
 
     .portefolio_current article {
-        height: 58%;
-    }
-
-    .portefolio_current p {
-        height: 35%;
-        overflow: scroll;
+        height: 100%;
+        padding: 20px;
     }
 
     .portefolio_list {
@@ -177,5 +182,18 @@
     .portefolio_project {
         width: 100px;
         height: 100px;
+    }
+}
+/*////////////////////////////////CONTACT/////////////////////////*/
+@media all and (max-device-width: 768px){
+    .contact_content{
+        width: 65%;
+    }
+}
+/*////////////////////////////////FOOTER/////////////////////////*/
+@media all and (max-device-width: 768px){
+    footer{
+       height: auto;
+       padding: 10px;
     }
 }

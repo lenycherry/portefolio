@@ -3,7 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="height=device-height, 
+    width=device-width, initial-scale=1.0, 
+    minimum-scale=1.0, maximum-scale=1.0, 
+    user-scalable=no">
     <meta name="description" content="Portefolio de Célia Gaudin, développeuse web. HTML5, CSS3, JS ES6, PHP...">
     <link href="assets/css/resetcss.css" rel="stylesheet">
     <link href="assets/css/main_style.css" rel="stylesheet">
@@ -69,7 +72,7 @@
                 <h2 class="section_title_apropos">A PROPOS</h2>
             </div>
         </div>
-        <div class="section_bloc_content">
+        <div class="section_bloc_content apropos_bloc_content">
             <div class="section_apropos_content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras luctus
                     aliquet augue a consectetur. Nunc aliquet mauris sed sagittis placerat. Lorem ipsum dolor sit
@@ -323,77 +326,48 @@
             </div>
         </div>
         <div class="section_bloc_content">
-            <form>
+            <div class="contact_content">
                 <h2>ME CONTACTER</h2>
-                <div class="form_group">
-                    <label for="form_name">Nom et Prénom: </label>
-                    <input id="form_name" placeholder="Nom Prénom" type="text" name="form_name">
-                    <div id="error_form_name"></div>
+                <div class="info">
+                    <i></i>
+                    <a href="">
+                        <p>Mail: </p>
+                    </a>
                 </div>
-                <div class="form_group">
-                    <label for="email">E-mail: </label>
-                    <input id="email" placeholder="exemple@info.com" type="email" name="email">
-                    <div id="error_form_mail"></div>
+                <div class="info">
+                    <i></i>
+                    <a href="">
+                        <p>Tel: </p>
+                    </a>
                 </div>
-                <div class="form_group">
-                    <label for="form_message">Votre message</label>
-                    <textarea name="message" id="form_message" cols="30" rows="10"
-                        placeholder="Écrivez votre message ici"></textarea>
-                    <div id="error_form_message"></div>
+                <div class="info">
+                    <i></i>
+                    <a href="">
+                        <p>Adresse: </p>
+                    </a>
                 </div>
-                <div id="captcha_bloc" class="form_group">
-                    <p id="captcha">Combien font
-                        <span id="captcha_first">8</span>
-                        " + "
-                        <span id="captcha_second">8</span>
-                        " ? "
-                    </p>
-                    <div id="refresh_captcha">Rafraîchir</div>
-                    <label for="captcha_input">Résultat: </label>
-                    <input id="captcha_input" placeholder="Indiquez un nombre" type="number" name="captcha">
-                </div>
-                <button id="btn_contact" type="submit">Envoyer</button>
-            </form>
+            </div>
+
+
         </div>
     </section>
 
     <footer>
-        <div id="infos">
-            <div class="info">
-                <i></i>
-                <a href="">
-                    <p>tel</p>
-                </a>
-            </div>
-            <div class="info">
-                <i></i>
-                <a href="">
-                    <p>adresse</p>
-                </a>
-            </div>
-            <div class="info">
-                <i></i>
-                <a href="">
-                    <p>mail</p>
-                </a>
-            </div>
-            <div class="info">
-                <i></i>
-                <a href="">
-                    <p>site</p>
-                </a>
-            </div>
-
-        </div>
-        <div id="social">
+        <div class="social_content">
+            <h2>Rejoignez-moi aussi sur:</h2>
             <a href=""><img src="" alt="logo linkedin"></a>
             <a href=""><img src="" alt="logo twitter"></a>
+            <a href=""><img src="" alt="logo gitHub"></a>
         </div>
+        <article class="apropos_site">
+            <h2>A propos du site: </h2>
+            <p>Ce site, encore en construction, est un terrain de jeu pour manipuler différentes technologies front HTML5, CSS3, javascript ES6. Il viendra donc a évoluer et à être paufiné au fil du temps. N'hésitez pas à revenir pour découvrir de nouvelles avancées.</p>
+        </article>
     </footer>
 
     <script src="assets/js/IntersectionObserver.js"></script>
     <script src="assets/js/Pagination.js"></script>
-    <script src="assets/js/OpenWindow.js"></script>
+    <script src="assets/js/SlideWindow.js"></script>
 </body>
 
 </html>
