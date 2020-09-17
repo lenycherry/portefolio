@@ -50,7 +50,7 @@
     transition: 1s;
 }
 /*////////////////////////////////FLIP ANIMATION/////////////////////////*/
-  .comp_tech_content:hover .comp_tech_img {
+  .comp_tech_content:hover .logo_techno {
   transform: rotateY(180deg);
 }
   .comp_tech_content:hover .comp_tech_text {

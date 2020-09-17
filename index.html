@@ -8,6 +8,8 @@
     minimum-scale=1.0, maximum-scale=1.0, 
     user-scalable=no">
     <meta name="description" content="Portefolio de Célia Gaudin, développeur web. HTML5, CSS3, JS ES6, PHP...">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="assets/css/resetcss.css" rel="stylesheet">
     <link href="assets/css/main_style.css" rel="stylesheet">
     <link href="assets/css/animations.css" rel="stylesheet">
@@ -97,9 +99,9 @@
         </div>
         <div class=" section_services section_bloc_content">
             <article class="services_article">
-                <div class="services_square">créa</div>
+                <div class="services_square"><i class="far fa-lightbulb fa-4x"></i></div>
                 <div class="services_text">
-                    <h2>Créa</h2>
+                    <h2>CRÉATION</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Cras luctus
                         aliquet augue a consectetur. Nunc aliquet mauris sed sagittis placerat. Lorem ipsum dolor sit
@@ -107,7 +109,7 @@
                 </div>
             </article>
             <article class="services_article">
-                <div class="services_square">seo</div>
+                <div class="services_square"><i class="fas fa-search fa-4x"></i></div>
                 <div class="services_text">
                     <h2>SEO</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
@@ -117,9 +119,9 @@
                 </div>
             </article>
             <article class="services_article">
-                <div class="services_square">secu</div>
+                <div class="services_square"><i class="fas fa-shield-alt fa-4x"></i></div>
                 <div class="services_text">
-                    <h2>SECU</h2>
+                    <h2>SECURITÉ</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Cras luctus
                         aliquet augue a consectetur. Nunc aliquet mauris sed sagittis placerat. Lorem ipsum dolor sit
@@ -127,9 +129,9 @@
                 </div>
             </article>
             <article class="services_article">
-                <div class="services_square">média</div>
+                <div class="services_square"><i class="fas fa-mobile-alt fa-4x"></i></div>
                 <div class="services_text">
-                    <h2>média</h2>
+                    <h2>RESPONSIVE</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Cras luctusaliquet augue a consectetur. Nunc aliquet mauris sed sagittis placerat. Lorem ipsum
                         dolor sit
@@ -149,7 +151,7 @@
         <div class="section_bloc_content competences_bloc_content">
             <div class="comp_tech_bloc">
                 <figure class="comp_tech_content comp_html">
-                    <img class="comp_tech_img comp_tech_img_html" src="" alt="">
+                    <div class="logo_techno"><i class="fab fa-html5 fa-7x"></i></div>
                     <figcaption class="comp_tech_text comp_tech_text_html">
                         <h2>HTML5</h2>
                         <p>Lorem ipsum dolor sit amet consectetur
@@ -158,24 +160,24 @@
                 </figure>
 
                 <figure class="comp_tech_content comp_css">
-                    <img class="comp_tech_img comp_tech_img_css" src="" alt="">
+                    <div class="logo_techno"><i class="fab fa-css3-alt fa-7x"></i></div>
                     <figcaption class="comp_tech_text comp_tech_text_css">
-                        <h2>CSS3</h2> 
+                        <h2>CSS3</h2>
                         <p>Lorem ipsum dolor sit amet consectetur
                             adipisicing</p>
                     </figcaption>
                 </figure>
 
                 <figure class="comp_tech_content comp_js">
-                    <img class="comp_tech_img comp_tech_img_js" src="" alt="">
+                    <div class="logo_techno"><i class="fab fa-js-square fa-7x"></i></div>
                     <figcaption class="comp_tech_text comp_tech_text_js">
                         <h2>Javascript ES6</h2>
                         <p>Lorem ipsum dolor sit amet consectetur
-                        adipisicing</p>
+                            adipisicing</p>
                     </figcaption>
                 </figure>
                 <figure class="comp_tech_content comp_php">
-                    <img class="comp_tech_img comp_tech_img_php" src="" alt="">
+                    <div class="logo_techno"><i class="fab fa-php fa-5x"></i></div>
                     <figcaption class="comp_tech_text comp_tech_text_php">
                         <h2>PHP7</h2>
                         <p>Lorem ipsum dolor sit amet consectetur
@@ -185,15 +187,16 @@
             </div>
             <div class="comp_fw_bloc">
                 <div class="comp_fw_content fw_bs">
-                    <img class="comp_fw_img comp_fw_img_bs" src="" alt="">
+                    <i class="fab fa-bootstrap fa-5x"></i>
                     <h3>BOOTSTRAP</h3>
                 </div>
                 <div class="comp_fw_content fw_jq">
-                    <img class="comp_fw_img comp_fw_img_jq" src="" alt="">
+                    <img class="comp_fw_img comp_fw_img_jq" src="assets/images/logoJQUERY.png"
+                        alt="logo de JQUERY, 3 ondes">
                     <h3>JQUERY</h3>
                 </div>
                 <div class="comp_fw_content fw_wp">
-                    <img class="comp_fw_img comp_fw_img_wp" src="" alt="">
+                    <i class="fab fa-wordpress fa-4x"></i>
                     <h3>WORDPRESS</h3>
                 </div>
             </div>
@@ -209,9 +212,10 @@
         <div class="section_bloc_content portefolio_bloc_content">
             <div id="portefolio_current01" class="portefolio_current invisible_window">
                 <div class="close_current_window"></div>
-                <img id="portefolio_current_img01" class="portefolio_current_img" src="" alt="">
-                <article id="portefoloio_current01" class="portefolio_current_article">
-                    <h2>Titre du projet 1</h2>
+                <img id="portefolio_current_img05" class="portefolio_current_img" src="assets/images/siteGTK.jpg"
+                    alt="accueil du site goodToKnow sur fond de feuilles vertes">
+                <article id="portefoloio_current05" class="portefolio_current_article">
+                    <h2>Good To Know, journal d'informations sur l'écologie</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in temporibus voluptas?
                         Aspernatur omnis repudiandae in obcaecati quibusdam, ab consequatur! Lorem ipsum dolor sit amet
                         consectetur adipisicing elit. Facilis doloribus eaque fuga deserunt tempore accusamus saepe
@@ -223,9 +227,10 @@
             </div>
             <div id="portefolio_current02" class="portefolio_current invisible_window">
                 <div class="close_current_window"></div>
-                <img id="portefolio_current_img02" class="portefolio_current_img" src="" alt="">
-                <article id="portefoloio_current02" class="portefolio_current_article">
-                    <h2>Titre du projet 2</h2>
+                <img id="portefolio_current_img04" class="portefolio_current_img" src="assets/images/siteJF.jpg"
+                    alt="Montagne enneigées avec un ciel gris">
+                <article id="portefoloio_current04" class="portefolio_current_article">
+                    <h2>Blog de l'écrivain J.Forteroche sur sa dernière oeuvre : "Billet simple pour l'Alaska".</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in temporibus voluptas?
                         Aspernatur omnis repudiandae in obcaecati quibusdam, ab consequatur! Lorem ipsum dolor sit amet
                         consectetur adipisicing elit. Facilis doloribus eaque fuga deserunt tempore accusamus saepe
@@ -237,9 +242,10 @@
             </div>
             <div id="portefolio_current03" class="portefolio_current invisible_window">
                 <div class="close_current_window"></div>
-                <img id="portefolio_current_img03" class="portefolio_current_img" src="" alt="">
+                <img id="portefolio_current_img03" class="portefolio_current_img" src="assets/images/siteVELOSUD.jpg"
+                    alt="">
                 <article id="portefoloio_current03" class="portefolio_current_article">
-                    <h2>Titre du projet 3</h2>
+                    <h2>VéloSud, application de location de vélos en ligne.</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in temporibus voluptas?
                         Aspernatur omnis repudiandae in obcaecati quibusdam, ab consequatur! Lorem ipsum dolor sit amet
                         consectetur adipisicing elit. Facilis doloribus eaque fuga deserunt tempore accusamus saepe
@@ -251,9 +257,10 @@
             </div>
             <div id="portefolio_current04" class="portefolio_current invisible_window">
                 <div class="close_current_window"></div>
-                <img id="portefolio_current_img04" class="portefolio_current_img" src="" alt="">
-                <article id="portefoloio_current04" class="portefolio_current_article">
-                    <h2>Titre du projet 4</h2>
+                <img id="portefolio_current_img02" class="portefolio_current_img" src="assets/images/siteIREKI.jpg"
+                    alt="Maisons colorées jaunes oranges rouges avec une montagne enneigée derrière">
+                <article id="portefoloio_current02" class="portefolio_current_article">
+                    <h2>Office de tourisme de la ville d' Ireki</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in temporibus voluptas?
                         Aspernatur omnis repudiandae in obcaecati quibusdam, ab consequatur! Lorem ipsum dolor sit amet
                         consectetur adipisicing elit. Facilis doloribus eaque fuga deserunt tempore accusamus saepe
@@ -265,23 +272,10 @@
             </div>
             <div id="portefolio_current05" class="portefolio_current invisible_window">
                 <div class="close_current_window"></div>
-                <img id="portefolio_current_img05" class="portefolio_current_img" src="" alt="">
-                <article id="portefoloio_current05" class="portefolio_current_article">
-                    <h2>Titre du projet 5</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in temporibus voluptas?
-                        Aspernatur omnis repudiandae in obcaecati quibusdam, ab consequatur! Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Facilis doloribus eaque fuga deserunt tempore accusamus saepe
-                        velit dolorum voluptatibus adipisci!</p>
-                    <div class="link_btn">
-                        <div class="btn_square"></div><a href="">Voir le site</a>
-                    </div>
-                </article>
-            </div>
-            <div id="portefolio_current06" class="portefolio_current invisible_window">
-                <div class="close_current_window"></div>
-                <img id="portefolio_current_img06" class="portefolio_current_img" src="" alt="">
-                <article id="portefoloio_current06" class="portefolio_current_article">
-                    <h2>Titre du projet 6</h2>
+                <img id="portefolio_current_img01" class="portefolio_current_img" src="assets/images/siteWEBAGENCY.jpg"
+                    alt="Petite fille enjouée à la main peinturlurée">
+                <article id="portefoloio_current01" class="portefolio_current_article">
+                    <h2>Agence web : La Web Agency</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in temporibus voluptas?
                         Aspernatur omnis repudiandae in obcaecati quibusdam, ab consequatur! Lorem ipsum dolor sit amet
                         consectetur adipisicing elit. Facilis doloribus eaque fuga deserunt tempore accusamus saepe
@@ -292,31 +286,32 @@
                 </article>
             </div>
 
+
             <div class="portefolio_list">
-                <picture id="portefolio_project01" class="portefolio_project elem_invisible">
-                    <img src="" alt="">
-                    <figcaption>projet01</figcaption>
-                </picture>
-                <picture id="portefolio_project02" class="portefolio_project elem_invisible">
-                    <img src="" alt="">
-                    <figcaption>projet02</figcaption>
-                </picture>
-                <picture id="portefolio_project03" class="portefolio_project elem_invisible">
-                    <img src="" alt="">
-                    <figcaption>projet03</figcaption>
+                <picture id="portefolio_project05" class="portefolio_project elem_invisible">
+                    <img src="assets/images/MiniSiteGTK.jpg" alt="Titre blanc GOOD to know sur fond de feuilles vertes">
+                    <figcaption>GOOD to know, journal de l'écologie</figcaption>
                 </picture>
                 <picture id="portefolio_project04" class="portefolio_project elem_invisible">
-                    <img src="" alt="">
-                    <figcaption>projet04</figcaption>
+                    <img src="assets/images/MiniSiteJF.jpg"
+                        alt="Titre noir 'billet simple pour l'alaska' sur fond gris">
+                    <figcaption>Blog de l'écrivain Jean Forteroche</figcaption>
                 </picture>
-                <picture id="portefolio_project05" class="portefolio_project elem_invisible">
-                    <img src="" alt="">
-                    <figcaption>projet05</figcaption>
+                <picture id="portefolio_project03" class="portefolio_project elem_invisible">
+                    <img src="assets/images/MiniSiteVELOSUD.jpg"
+                        alt="titre blanc et bleu 'Bienvenue sur VéloSud' sur fond de bâtiments anciens">
+                    <figcaption>Application VéloSud, réservation de vélo en ligne</figcaption>
                 </picture>
-                <picture id="portefolio_project06" class="portefolio_project elem_invisible">
-                    <img src="" alt="">
-                    <figcaption>projet06</figcaption>
+                <picture id="portefolio_project02" class="portefolio_project elem_invisible">
+                    <img src="assets/images/MiniSiteIREKI.jpg"
+                        alt="Maisons orange jaune et rouge avec montagne enneigées en fond">
+                    <figcaption>Office de tourisme d' Ireki</figcaption>
                 </picture>
+                <picture id="portefolio_project01" class="portefolio_project elem_invisible">
+                    <img src="assets/images/MiniSiteWEBAGENCY.jpg" alt="petite fille à la main peinturlurée">
+                    <figcaption>Agence Web, la WEB AGENCY</figcaption>
+                </picture>
+
                 <div id="elem_pagination_pages" class="pagination_bloc"></div>
             </div>
         </div>
@@ -359,13 +354,17 @@
     <footer>
         <div class="social_content">
             <h2>Rejoignez-moi aussi sur:</h2>
-            <a href=""><img src="" alt="logo linkedin"></a>
-            <a href=""><img src="" alt="logo twitter"></a>
-            <a href=""><img src="" alt="logo gitHub"></a>
+            <div class="reseaux">
+                <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+                <a href=""><i class="fab fa-github-square fa-2x"></i></a>
+            </div>
         </div>
         <article class="apropos_site">
             <h2>A propos du site: </h2>
-            <p>Ce site (encore en construction) est un terrain de jeu pour manipuler différentes technologies front HTML5, CSS3, javascript ES6. Il viendra donc a évoluer et à être peaufiné au fil du temps. N'hésitez pas à revenir pour découvrir de nouvelles avancées ou suivre le projet sur GitHub.</p>
+            <p>Ce site (encore en construction) est un terrain de jeu pour manipuler différentes technologies front
+                HTML5, CSS3, javascript ES6. Il viendra donc a évoluer et à être peaufiné au fil du temps. N'hésitez pas
+                à revenir pour découvrir de nouvelles avancées ou suivre le projet sur GitHub.</p>
         </article>
     </footer>
 

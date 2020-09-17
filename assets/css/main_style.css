@@ -86,11 +86,10 @@ header {
 }
 .navbar a {
     position: inherit;
-    padding: 12px;
     top: 12px;
 }
 .navbar a:hover{
- font-size: 1.1em;
+font-size: 110%;
 }
 .main_menu_burger {
     display: none;
@@ -99,10 +98,10 @@ header {
 background-color: rgba(113,28,183,0.6);
 }
 .square_services{
-background-color: rgba(204, 102, 33,0.6);
+    background-color: rgba(207, 74, 74,0.6);
 }
 .square_comps{
-    background-color: rgba(207, 74, 74,0.6);
+    background-color: rgba(255, 215, 43,0.6);
 }
 .square_portefolio{
     background-color: rgba(109, 180, 111,0.6);
@@ -186,7 +185,7 @@ transform: translateY(0);
 /*////////////////////////////////A PROPOS/////////////////////////*/
 #apropos_bloc{
     min-height: 100vh;
-    background-image: linear-gradient(rgba(207, 74, 74, 0.5), rgba(113, 28, 183, 0.5)), url("../images/imgBGKeyboard.jpg");
+    background-image: linear-gradient( rgba(113, 28, 183, 0.5), rgba(207, 74, 74, 0.5)), url("../images/imgBGKeyboard.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -208,63 +207,71 @@ transform: translateY(0);
 }
 .cv_btn {
     position: absolute;
-    width: 115px;
+    width: 125px;
     height: 40px;
     bottom: -12px;
     right: 85px;
 }
 .cv_btn a:hover{
-    font-size: 1.1em;
+    font-size: 110%;
 }
 
 .link_cv {
     position: absolute;
     z-index: 1;
-    padding-left: 25px;
+    padding-left: 12px;
     padding-top: 13px;
 }
 
 /*////////////////////////////////SERVICES/////////////////////////*/
 #services_bloc {
-    background-image: linear-gradient(rgba(254, 48, 49, 0.5), rgba(33, 124, 36, 0.5)), url("../images/imgBGScreen.jpg");
+    background-image: linear-gradient(rgba(254, 48, 49, 0.5), rgba(255, 215, 43,0.6)), url("../images/imgBGScreen.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 #services_bloc .section_title_content{
-    background-color: rgb(204, 102, 33,0.7);
+    background-color:rgba(207, 74, 74,0.8);
 }
 .section_services {
     flex-flow: column;
 }
 .services_article {
     width: 75%;
+    height: 120px;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
 
 .services_square {
-    width: 140px;
-    height: 140px;
-    background-color: rgba(255, 215, 43,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    background-color: rgba(255, 170, 43, 0.7);
 }
 
 .services_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 70%;
     padding: 20px;
     background-color: white;
+    color: black;
 }
 
 /*////////////////////////////////COMPETENCES/////////////////////////*/
 #competences_bloc {
-    background-image: linear-gradient(rgba(255, 215, 43, 0.5), rgba(204, 102, 33, 0.2)), url("../images/imgBGScreen.jpg");
+    background-image: linear-gradient(rgba(255, 215, 43, 0.5), rgba(109, 180, 111,0.6)), url("../images/imgBGScreen.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 #competences_bloc .section_title_content{
-    background-color: rgba(207, 74, 74, 0.8);
+    background-color: rgba(255, 215, 43,0.8);
 }
 .comp_tech_bloc {
     display: flex;
@@ -286,20 +293,25 @@ transform: translateY(0);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 140px;
-    height: 320px;
+    width: 15%;
+    height: 50%;
     position: relative;
     cursor: pointer;
 }
 
-.comp_tech_img {
+.logo_techno {
     width: 100%;
     height: 100%;
-    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(253, 174, 54);
     z-index: 2;
     pointer-events: none;
     transition: all ease 1s ;
     backface-visibility: hidden;
+    border-top: white 2px dotted;
+    border-bottom: white 2px dotted;
 }
 
 .comp_tech_text {
@@ -325,18 +337,23 @@ transform: translateY(0);
 }
 .comp_fw_content {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
+    align-items: center;
     width: 110px;
     height: 110px;
 }
+.comp_fw_img_jq{
+    height: 70%;
+    width: 70%;
+}
 .fw_bs{
-    background-color:rgba(255, 215, 43,0.5);
+    background-color:rgba(255, 215, 43,0.7);
 }
 .fw_jq{
-    background-color:rgba(207, 74, 74, 0.5)
+    background-color:rgba(207, 74, 74, 0.7)
 }
 .fw_wp{
-    background-color: rgba(33,124,36,0.5);
+    background-color: rgba(33,124,36,0.7);
 }
 
 .comp_fw_content h3 {
@@ -348,7 +365,7 @@ transform: translateY(0);
 
 /*////////////////////////////////PORTEFOLIO/////////////////////////*/
 #portefolio_bloc {
-    background-image: linear-gradient(rgba(33, 124, 36, 0.5), rgba(33, 124, 36, 0.5)), url("../images/imgBGCode.jpg");
+    background-image: linear-gradient(rgba(33, 124, 36, 0.5), rgba(60, 109, 214,0.5)), url("../images/imgBGCode.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -362,13 +379,13 @@ transform: translateY(0);
     justify-content: center;
     align-items: center;
     width: 72%;
-    height: 90vh;
-    background-color: rgba(25, 4, 177,0.2);
+    height: 100vh;
+    background-color: rgba(255, 215, 43, 0.1);
 }
 
 .portefolio_current img {
+    height: 45%;
     width: 80%;
-    height: 60%;
     background-color: wheat;
 }
 
@@ -378,7 +395,7 @@ transform: translateY(0);
     justify-content: center;
     width: 80%;
     height: 40%;
-    background-color:rgba(33, 124, 36, 0.8); ;
+    background-color:rgba(61, 75, 105,0.9); ;
 }
 .portefolio_current h2{
     margin:10px 0;
@@ -395,12 +412,12 @@ transform: translateY(0);
     height: 0;
     right: 0;
     border-top: 35px solid transparent;
-    border-right: 25px solid rgba(207, 74, 74,1);
+    border-right: 25px solid  rgba(255, 215, 43, 0.6);
     border-bottom: 35px solid transparent;
     position: absolute;
 }
 .close_current_window:hover{
-    border-right: 25px solid rgb(60, 109, 214);
+    border-right: 25px solid rgba(207, 74, 74,1);
 }
 .link_btn{
     width: 110px;
@@ -418,7 +435,7 @@ transform: translateY(0);
     position: relative;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 65%;
     height: 90vh;
@@ -443,44 +460,43 @@ transform: translateY(0);
     display: flex;
     opacity: 0;
     align-items: center;
-    justify-content: center;
+    text-align: center;
     position: absolute;
     bottom: 0;
     transition: all ease 0.7s;
 }
 .portefolio_project:hover figcaption{
   opacity: 1;
+  background-color: rgba(10, 10, 10, 0.9);
 }
-.pagination_bloc{
-    position: absolute;
+.pagination_bloc{   
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 20px;
-    bottom: 0%;
 }
 .page{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color:rgb(207, 74, 74);
+    background-color: rgba(255, 215, 43, 0.6);
     margin: 5px;
     cursor: pointer;
 }
 .page_active{
-    background-color: rgb(60, 109, 214);
+    background-color:rgb(207, 74, 74);
 }
 .elem_invisible{
     display: none;
 }
 /*////////////////////////////////CONTACT/////////////////////////*/
 #contact_bloc {
-    background-image: linear-gradient(rgba(109, 180, 111, 0.5), rgba(113, 28, 183, 0.5)), url("../images/imgBGScreen.jpg");
+    background-image: linear-gradient(rgba(60, 109, 214, 0.6), rgba(113, 28, 183, 0.5)), url("../images/imgBGScreen.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 65vh;
+    min-height:75vh;
 }
 #contact_bloc .section_title_content{
     background-color:rgba(60, 109, 214,0.8);
@@ -494,7 +510,6 @@ transform: translateY(0);
     justify-content: center;
     justify-content: space-around;
     padding: 10px;
-    border-right: 1px dotted black;
 }
 
 
@@ -502,14 +517,23 @@ transform: translateY(0);
 footer {
     display: flex;
     justify-content: space-around;
-    height: 150px;
+    height: 20vh;
    background-image:linear-gradient(rgba(29, 28, 28, 0.9), rgba(10, 10, 10, 0.9)), url("../images/imgTrame.jpg");
 }
 .social_content{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 20%;
-    justify-content: space-evenly;
+}
+.social_content h2{
+    margin-bottom: 10px;
+}
+.social_content a{
+margin: 5px;
+}
+.social_content .fab:hover{
+transform: scale(1.1);
 }
 .apropos_site{
     display: flex;
