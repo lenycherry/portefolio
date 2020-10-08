@@ -82,9 +82,11 @@ header {
 .link_logo {
     color: white;
 }
-.link_logo:hover{
+
+.link_logo:hover {
     color: rgba(207, 74, 74, 1);
 }
+
 .navbar {
     width: 50%;
 }
@@ -108,6 +110,7 @@ header {
     top: 10px;
     font-size: medium;
 }
+
 .main_menu_burger {
     display: none;
 }
@@ -216,11 +219,13 @@ header {
     padding: 35px;
     background-color: rgba(181, 0, 172, 0.8);
 }
-.section_apropos_content p{
+
+.section_apropos_content p {
     margin-bottom: 10px;
     text-indent: 2em;
     line-height: 1.3em;
 }
+
 #apropos_bloc .section_title_content {
     background-color: rgba(113, 28, 183, 0.8);
 }
@@ -236,6 +241,7 @@ header {
     bottom: -12px;
     right: 85px;
 }
+
 .link_cv {
     position: absolute;
     z-index: 1;
@@ -417,7 +423,6 @@ header {
     align-items: center;
     width: 72%;
     height: 100vh;
-    background-color: rgba(255, 215, 43, 0.1);
 }
 
 .portefolio_current img {
@@ -438,14 +443,16 @@ header {
 
 .portefolio_current h2 {
     margin: 10px 0;
-    padding: 10px;
-
+    padding: 20px;
+    font-size: 1.4em;
 }
 
 .portefolio_current p {
     margin-bottom: 10px;
-    padding: 10px;
-
+    padding: 20px;
+}
+.portefolio_current ul {
+padding: 0 0 20px 20px;
 }
 
 .close_current_window {
@@ -462,24 +469,30 @@ header {
     border-right: 25px solid rgba(207, 74, 74, 1);
 }
 
-.link_btn {
-    width: 110px;
+.link_portfolio_btn {
+    width: 120px;
     height: 40px;
+    padding: 20px;
     position: relative;
 }
 
-.link_btn a {
+.link_portfolio_btn a {
     position: absolute;
+    width: max-content;
     z-index: 1;
-    padding-left: 20px;
+    padding-left: 8px;
     padding-top: 10px;
+}
+
+.link_portfolio_btn .btn_square {
+    background-color: rgba(109, 180, 111, 0.8);
 }
 
 .portefolio_list {
     position: relative;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 65%;
     height: 90vh;
@@ -488,8 +501,9 @@ header {
 
 .portefolio_project {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
+    margin: 0 20px;
     cursor: pointer;
 }
 
@@ -509,7 +523,6 @@ header {
     bottom: 0;
     transition: all ease 0.7s;
 }
-
 .portefolio_project:hover figcaption {
     opacity: 1;
     background-color: rgba(10, 10, 10, 0.9);

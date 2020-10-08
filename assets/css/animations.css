@@ -33,6 +33,12 @@
     animation-name: pivot180, resize;
     -webkit-animation-fill-mode: forwards;
 }
+.link_portfolio_btn:hover .btn_square{
+  animation-duration: 0.3s;
+  animation-delay: 0s, 300ms;
+  animation-name: pivot180, resize;
+  -webkit-animation-fill-mode: forwards;
+}
 /*////////////////////////////////HOME TITLE/////////////////////////*/
 
  .openTitle {
