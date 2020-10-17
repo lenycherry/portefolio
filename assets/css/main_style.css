@@ -163,23 +163,21 @@ header {
     writing-mode: vertical-rl;
     text-orientation: upright;
     text-align: center;
-    margin: auto;
+    padding: 10px;
 }
 
 .accueil_title_firstName {
     display: flex;
-    width: 20%;
     height: 80%;
     transition: 1.5s ease all;
-    background-color: rgba(113, 28, 183, 0.5);
-    margin-right: 20%;
+    background-color: rgba(113, 28, 183, 0.7);
+    margin-right: 10%;
     font-size: 10vh;
     color: rgba(207, 74, 74, 1);
 }
 
 .accueil_title_dev {
     display: flex;
-    width: 6%;
     height: 68%;
     margin: 0 10px;
     transition: 1.5s ease all;
@@ -192,17 +190,16 @@ header {
 
 .accueil_title_lastName {
     display: flex;
-    width: 20%;
     height: 80%;
     transition: 1.5s ease all;
-    background-color: rgba(113, 28, 183, 0.5);
+    background-color: rgba(113, 28, 183, 0.7);
     font-size: 10vh;
     color: rgba(207, 74, 74, 1);
 }
 
 /*////////////////////////////////A PROPOS/////////////////////////*/
 #apropos_bloc {
-    min-height: 100vh;
+    
     background-image: linear-gradient(rgba(113, 28, 183, 0.5), rgba(207, 74, 74, 0.5)), url("../images/imgBGKeyboard.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -267,7 +264,6 @@ header {
 
 .services_article {
     width: 75%;
-    height: 120px;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
@@ -307,6 +303,7 @@ header {
 
 .comp_tech_bloc {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
     width: 80%;
@@ -325,8 +322,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 15%;
-    height: 50%;
+    width: 200px;
+    height: 400px;
+    margin: 10px;
     position: relative;
     cursor: pointer;
 }
@@ -350,14 +348,14 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
-    height: 100%;
     background-color: white;
     position: absolute;
     pointer-events: none;
     transform: rotateY(180deg);
     transition: all ease 1s;
-    padding: 5px;
+    
+    width: 200px;
+    height: 400px;
 }
 
 .comp_tech_text h2 {
@@ -369,7 +367,7 @@ header {
 .comp_tech_text p {
     color: black;
     line-height: 1.3em;
-    margin-bottom: 10px;
+    padding: 5px;
 }
 
 .comp_fw_content {
@@ -415,14 +413,14 @@ header {
 #portefolio_bloc .section_title_content {
     background-color: rgba(109, 180, 111, 0.6);
 }
-
+.portefolio_bloc_content{
+    height: 100vh;
+}
 .portefolio_current {
     position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 72%;
-    height: 100vh;
 }
 
 .portefolio_current img {
@@ -437,8 +435,7 @@ header {
     justify-content: center;
     width: 80%;
     height: 40%;
-    background-color: rgba(61, 75, 105, 0.9);
-    ;
+    background-color: rgba(61, 75, 105, 1);
 }
 
 .portefolio_current h2 {
@@ -487,23 +484,23 @@ padding: 0 0 20px 20px;
 .link_portfolio_btn .btn_square {
     background-color: rgba(109, 180, 111, 0.8);
 }
-
+.portefolio_list_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+}
 .portefolio_list {
-    position: relative;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
-    width: 65%;
-    height: 90vh;
     transition: all ease 0.5s;
 }
 
 .portefolio_project {
     position: relative;
-    width: 350px;
-    height: 350px;
-    margin: 0 20px;
+    width: 40%;
     cursor: pointer;
 }
 
@@ -525,16 +522,14 @@ padding: 0 0 20px 20px;
 }
 .portefolio_project:hover figcaption {
     opacity: 1;
-    background-color: rgba(10, 10, 10, 0.9);
+    background-color:rgba(61, 75, 105, 0.9);
 }
 
-.pagination_bloc {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 20px;
+#elem_pagination_pages{
+display: flex;
+margin: 10px;
 }
+
 
 .page {
     width: 20px;
@@ -574,10 +569,27 @@ padding: 0 0 20px 20px;
     flex-direction: column;
     justify-content: center;
     justify-content: space-around;
-    padding: 10px;
+    padding: 20px;
 }
 
-
+.contact_content h2{
+    font-size: 1.4em;
+}
+.contact_content span{
+    font-size: 1.2em;
+    font-family: 'Squada One', cursive; ;
+}
+.contact_content abbr{
+   text-decoration: none;
+   font-family: 'Squada One', cursive; ;
+   font-size: 1.2em;
+}
+.contact_content a:hover{
+   color: rgba(113, 28, 183, 1);
+   background-color: white;
+   padding: 5px;
+   
+}
 /*////////////////////////////////FOOTER/////////////////////////*/
 footer {
     display: flex;
@@ -603,6 +615,7 @@ footer {
 
 .social_content .fab:hover {
     transform: scale(1.1);
+    color: rgba(60, 109, 214, 0.8);
 }
 
 .apropos_site {

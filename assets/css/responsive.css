@@ -2,11 +2,11 @@
 @media all and (max-device-width: 768px) {
     .section_bloc_content {
         width: 100%;
+        margin: 10px 0;
     }
 
     .section_title_bloc {
         width: 100%;
-        margin-top: 50px;
     }
 
     .section_bloc {
@@ -15,7 +15,6 @@
     }
 
     .section_title_content {
-        height: max-content;
         width: 90%;
         height: 40px;
         writing-mode: initial;
@@ -28,14 +27,16 @@
 
 /*////////////////////////////////HEADER/////////////////////////*/
 @media all and (max-width: 1000px) {
-    .topbar_logo{
+    .topbar_logo {
         width: 22%;
     }
 }
+
 @media all and (max-device-width: 768px) {
-    .header{
+    .header {
         position: sticky;
     }
+
     .navbar {
         display: none;
     }
@@ -102,22 +103,27 @@
 /*////////////////////////////////ACCUEIL/////////////////////////*/
 @media all and (max-device-width: 768px) {
     .accueil_title_bloc {
-        width: 80vh;
+        width: 100vw;
     }
 
-    .accueil_title_dev {
-        width: 8%;
+    .accueil_title_firstName {
+        margin-right: 20%;
     }
 }
 
 /*////////////////////////////////APROPOS/////////////////////////*/
 @media all and (max-device-width: 768px) {
-    #apropos_bloc {
-        min-height: 100vh;
-    }
+
     .section_apropos_content {
         width: 80%;
-        height: 65%;
+        margin-bottom: 30px;
+    }
+}
+
+/*////////////////////////////////SERVICES////////////////////////////*/
+@media all and (max-device-width: 768px) {
+    .services_article {
+        width: 90%;
     }
 
     .services_square {
@@ -128,7 +134,6 @@
         width: 100%;
     }
 }
-/*////////////////////////////////SERVICES////////////////////////////*/
 
 /*////////////////////////////////COMPETENCES/////////////////////////*/
 @media all and (max-device-width: 768px) {
@@ -153,52 +158,78 @@
 }
 
 /*////////////////////////////////PORTEFOLIO/////////////////////////*/
-@media all and (max-device-width: 910px) {
-    .portefolio_bloc_content {
-        flex-direction: column;
+
+
+@media all and (max-device-width: 1024px) {
+    .portefolio_list_content {
+        position: absolute;
     }
 
     .portefolio_current {
-        width: 100%;
-        height:max-content;
-        flex-direction: column;
+        z-index: 10;
     }
-    .portefolio_current img{
-      height: 310px;
+}
+
+@media all and (max-device-width: 768px) {
+    .portefolio_list_content {
+        width: 80%;
     }
 
-    .portefolio_current article {
-        height: 100%;
-        padding: 20px;
-    }
-
-    .portefolio_list {
-        width: 90%;
-        height: 40vh;
-        justify-content: space-evenly;
-        margin: 10px 0;
+    .portefolio_bloc_content {
+        height: 80vh;
     }
 
     .portefolio_project {
-        width: 100px;
-        height: 100px;
+        width: 40vw;
+    }
+
+    .portefolio_current article {
+        width: 100%;
+    }
+
+    .portefolio_current img {
+        width: 100%;
     }
 }
-@media all and (max-device-width: 500px){
-    .portefolio_current img{
-        height: 170px;
-      }
+
+@media all and (max-device-width: 500px) {
+    .portefolio_project {
+        width: 40vw;
+    }
 }
+
+@media all and (max-device-width: 375px) {
+
+    .portefolio_list {
+        flex-direction: column;
+        align-content: center;
+    }
+    .portefolio_project {
+        width: 43vw;
+    }
+}
+
 /*////////////////////////////////CONTACT/////////////////////////*/
-@media all and (max-device-width: 768px){
-    .contact_content{
+@media all and (max-device-width: 768px) {
+    .contact_content {
         width: 65%;
     }
 }
+
+@media all and (max-device-width: 425px) {
+    .contact_content a {
+        font-size: 1em;
+    }
+
+    .contact_content {
+        width: 78%;
+    }
+}
+
 /*////////////////////////////////FOOTER/////////////////////////*/
-@media all and (max-device-width: 768px){
-    footer{
-       height: auto;
-       padding: 10px;
+@media all and (max-device-width: 768px) {
+    footer {
+        height: auto;
+        padding: 10px;
     }
 }
