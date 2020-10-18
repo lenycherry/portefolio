@@ -421,11 +421,13 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 90%;
+    width: 80%;
 }
 
 .portefolio_current img {
-    height: 45%;
-    width: 80%;
+    height: 40%;
+    width: 75%;
     background-color: wheat;
 }
 
@@ -433,8 +435,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
-    height: 40%;
+    height: 60%;
+    width: 75%;
     background-color: rgba(61, 75, 105, 1);
 }
 

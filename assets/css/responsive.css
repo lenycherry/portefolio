@@ -49,7 +49,7 @@
     .main_menu_burger {
         display: block;
         margin-top: 5px;
-        width: 30%;
+        width: 60%;
     }
 
     .nav_wrapper {
@@ -72,7 +72,7 @@
     .square_menu {
         width: 40px;
         height: 40px;
-        background-color: turquoise;
+        background-color: rgba(113, 28, 183, 1);
     }
 
     .menu_burger {
@@ -85,19 +85,29 @@
 
     .menu_burger li {
         border-top: 1px solid black;
-        background-color: white;
+        background-color: rgb(27, 27, 27);
         text-align: center;
         padding: 10px;
     }
 
-    .menu_checkbox:checked~.menu_burger {
+    #menu_checkbox:checked~.menu_burger {
         height: 100%;
-        transition: all ease 1s;
     }
 
     .menu-toggle {
         display: block;
     }
+
+    .menu_burger li:active {
+        background-color: gray;
+    }
+}
+
+@media all and (max-device-width: 500px) {
+    .topbar_logo {
+        padding: 0;
+    }
+
 }
 
 /*////////////////////////////////ACCUEIL/////////////////////////*/
@@ -160,13 +170,14 @@
 /*////////////////////////////////PORTEFOLIO/////////////////////////*/
 
 
-@media all and (max-device-width: 1024px) {
+@media all and (max-device-width: 1200px) {
     .portefolio_list_content {
         position: absolute;
     }
 
     .portefolio_current {
         z-index: 10;
+        width: 90%;
     }
 }
 
@@ -183,6 +194,10 @@
         width: 40vw;
     }
 
+    .portefolio_current {
+        height: 100%;
+    }
+
     .portefolio_current article {
         width: 100%;
     }
@@ -196,16 +211,32 @@
     .portefolio_project {
         width: 40vw;
     }
+
+    .portefolio_current {
+        width: 100%;
+    }
+
+    .portefolio_current article {
+        height: 100%;
+    }
+
+    .portefolio_current img {
+        height: 25%;
+    }
 }
 
 @media all and (max-device-width: 375px) {
+    .portefolio_bloc_content {
+        height: 85vh;
+    }
 
     .portefolio_list {
         flex-direction: column;
         align-content: center;
     }
+
     .portefolio_project {
-        width: 43vw;
+        width: 58vw;
     }
 }
 
