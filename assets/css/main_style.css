@@ -1,4 +1,11 @@
 /*////////////////////////////////BODY/////////////////////////*/
+body{
+    background-image: url("../images/imgBGKeyboard.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 html {
     scroll-behavior: smooth;
     color: white;
@@ -142,7 +149,7 @@ header {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(207, 74, 74, 0.5), rgba(113, 28, 183, 0.5)), url("../images/imgScreenCode.jpg");
+    background-image: linear-gradient(rgba(207, 74, 74, 0.5), rgba(113, 28, 183, 0.5)), url("../images/imgScreenCode3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -170,7 +177,7 @@ header {
     display: flex;
     height: 80%;
     transition: 1.5s ease all;
-    background-color: rgba(113, 28, 183, 0.7);
+    background-color: rgba(113, 28, 183, 0.9);
     margin-right: 10%;
     font-size: 10vh;
     color: rgba(207, 74, 74, 1);
@@ -183,7 +190,7 @@ header {
     transition: 1.5s ease all;
     transform: translateY(0);
     position: absolute;
-    background-color: rgb(60, 109, 214, 0.7);
+    background-color: rgb(60, 109, 214, 0.9);
     font-size: 4vh;
     color: rgba(113, 28, 183, 1);
 }
@@ -192,18 +199,14 @@ header {
     display: flex;
     height: 80%;
     transition: 1.5s ease all;
-    background-color: rgba(113, 28, 183, 0.7);
+    background-color: rgba(113, 28, 183, 0.9);
     font-size: 10vh;
     color: rgba(207, 74, 74, 1);
 }
 
 /*////////////////////////////////A PROPOS/////////////////////////*/
-#apropos_bloc {
-    
-    background-image: linear-gradient(rgba(113, 28, 183, 0.5), rgba(207, 74, 74, 0.5)), url("../images/imgBGKeyboard.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+#apropos_bloc {  
+    background-image: linear-gradient(rgba(113, 28, 183, 0.5), rgba(254, 48, 49, 0.5));
 }
 
 .section_apropos_content {
@@ -224,7 +227,7 @@ header {
 }
 
 #apropos_bloc .section_title_content {
-    background-color: rgba(113, 28, 183, 0.8);
+    background-color: rgba(113, 28, 183, 0.9);
 }
 
 .cv_btn_square {
@@ -248,14 +251,11 @@ header {
 
 /*////////////////////////////////SERVICES/////////////////////////*/
 #services_bloc {
-    background-image: linear-gradient(rgba(254, 48, 49, 0.5), rgba(255, 215, 43, 0.6)), url("../images/imgBGScreen.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: linear-gradient(rgba(254, 48, 49, 0.5), rgba(255, 215, 43, 0.6));
 }
 
 #services_bloc .section_title_content {
-    background-color: rgba(207, 74, 74, 0.8);
+    background-color: rgba(207, 74, 74, 0.9);
 }
 
 .section_services {
@@ -291,14 +291,11 @@ header {
 
 /*////////////////////////////////COMPETENCES/////////////////////////*/
 #competences_bloc {
-    background-image: linear-gradient(rgba(255, 215, 43, 0.5), rgba(109, 180, 111, 0.6)), url("../images/imgBGScreen.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: linear-gradient(rgba(255, 215, 43, 0.6), rgba(33, 124, 36, 0.5));
 }
 
 #competences_bloc .section_title_content {
-    background-color: rgba(255, 215, 43, 0.8);
+    background-color: rgba(255, 215, 43, 0.9);
 }
 
 .comp_tech_bloc {
@@ -335,7 +332,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(253, 174, 54);
+    background-color: rgba(207, 74, 74, 1);
     z-index: 2;
     pointer-events: none;
     transition: all ease 1s;
@@ -404,14 +401,11 @@ header {
 
 /*////////////////////////////////PORTEFOLIO/////////////////////////*/
 #portefolio_bloc {
-    background-image: linear-gradient(rgba(33, 124, 36, 0.5), rgba(60, 109, 214, 0.5)), url("../images/imgBGCode.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: linear-gradient(rgba(33, 124, 36, 0.5), rgba(60, 109, 214, 0.6));
 }
 
 #portefolio_bloc .section_title_content {
-    background-color: rgba(109, 180, 111, 0.6);
+    background-color: rgba(109, 180, 111, 0.9);
 }
 .portefolio_bloc_content{
     height: 100vh;
@@ -502,7 +496,7 @@ padding: 0 0 20px 20px;
 
 .portefolio_project {
     position: relative;
-    width: 40%;
+    width: 34%;
     cursor: pointer;
 }
 
@@ -552,7 +546,7 @@ margin: 10px;
 
 /*////////////////////////////////CONTACT/////////////////////////*/
 #contact_bloc {
-    background-image: linear-gradient(rgba(60, 109, 214, 0.6), rgba(113, 28, 183, 0.5)), url("../images/imgBGScreen.jpg");
+    background-image: linear-gradient(rgba(60, 109, 214, 0.6), rgba(113, 28, 183, 0.5)), url("../images/imgBGScreen2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -560,11 +554,11 @@ margin: 10px;
 }
 
 #contact_bloc .section_title_content {
-    background-color: rgba(60, 109, 214, 0.8);
+    background-color: rgba(60, 109, 214, 0.9);
 }
 
 .contact_content {
-    background-color: rgba(60, 109, 214, 0.8);
+    background-color: rgba(60, 109, 214, 0.9);
     height: 400px;
     width: 40%;
     display: flex;
