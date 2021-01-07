@@ -65,7 +65,8 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'Squada One', cursive;
 }
 
@@ -407,9 +408,7 @@ header {
 #portefolio_bloc .section_title_content {
     background-color: rgba(109, 180, 111, 0.9);
 }
-.portefolio_bloc_content{
-    height: 100vh;
-}
+
 .portefolio_current {
     position: relative;
     flex-direction: column;
@@ -420,7 +419,7 @@ header {
 }
 
 .portefolio_current img {
-    height: 40%;
+    height: 45%;
     width: 75%;
     background-color: wheat;
 }
@@ -435,17 +434,16 @@ header {
 }
 
 .portefolio_current h2 {
-    margin: 10px 0;
-    padding: 20px;
+    padding: 10px 15px 0px 15px;
     font-size: 1.4em;
 }
 
 .portefolio_current p {
     margin-bottom: 10px;
-    padding: 20px;
+    padding: 10px 15px 10px 15px;
 }
 .portefolio_current ul {
-padding: 0 0 20px 20px;
+padding: 0 0 15px 15px;
 }
 
 .close_current_window {
@@ -492,6 +490,7 @@ padding: 0 0 20px 20px;
     flex-flow: row wrap;
     justify-content: center;
     transition: all ease 0.5s;
+    width: 100%;
 }
 
 .portefolio_project {
@@ -509,16 +508,23 @@ padding: 0 0 20px 20px;
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     opacity: 0;
-    align-items: center;
     text-align: center;
     position: absolute;
     bottom: 0;
     transition: all ease 0.7s;
 }
+
+figcaption h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
 .portefolio_project:hover figcaption {
     opacity: 1;
-    background-color:rgba(61, 75, 105, 0.9);
+    background-color:rgba(61, 75, 105, 1);
 }
 
 #elem_pagination_pages{
