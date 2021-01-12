@@ -55,6 +55,14 @@
 .revealTitleLoaded {
     transition: 1s;
 }
+/*////////////////////////////////CATEGORY TITLE/////////////////////////*/
+.revealCategoryTitle {
+  transform: translateX(-100%);
+}
+
+.revealCategoryTitleLoaded {
+  transition: 0.7s;
+}
 /*////////////////////////////////FLIP ANIMATION/////////////////////////*/
   .comp_tech_content:hover .logo_techno {
   transform: rotateY(180deg);
@@ -180,20 +188,6 @@
 	-webkit-animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-/*fermeture test*/
-@-webkit-keyframes slide-in-right {
-  0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateX(-1000);
-            transform: translateX(-1000);
-    opacity: 0;
-  }
-}
-.invisible_window {
-  -webkit-animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.invisible_window { 
   display: none;
 }
