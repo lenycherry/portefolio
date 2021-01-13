@@ -40,14 +40,14 @@ a {
     writing-mode: vertical-rl;
     text-orientation: upright;
     z-index: 3;
-    font-size: 4vh;
+    font-size: 5vh;
+   background-image: linear-gradient(rgba(29, 28, 28, 0.9), rgba(10, 10, 10, 0.9)), url(../images/imgTrame.jpg);   
 }
 
 .section_bloc_content {
     align-items: center;
     justify-content: center;
     display: flex;
-    width: 93%;
 }
 
 .section_bloc {
@@ -62,6 +62,7 @@ a {
     height: 40px;
     z-index: 0;
     transition: 0.3s;
+    background-color: rgba(113, 28, 183, 0.6);
 }
 
 h1,
@@ -129,19 +130,19 @@ header {
 }
 
 .square_services {
-    background-color: rgba(207, 74, 74, 0.6);
+    background-color: rgba(113, 28, 183, 0.6);
 }
 
 .square_comps {
-    background-color: rgba(248, 164, 55, 0.6);
+    background-color: rgba(113, 28, 183, 0.6);
 }
 
 .square_portefolio {
-    background-color: rgba(109, 180, 111, 0.6);
+    background-color: rgba(113, 28, 183, 0.6);
 }
 
 .square_contact {
-    background-color: rgba(60, 109, 214, 0.6);
+    background-color: rgba(113, 28, 183, 0.6);
 }
 
 /*////////////////////////////////ACCUEIL/////////////////////////*/
@@ -219,7 +220,7 @@ header {
     width: 50%;
     height: max-content;
     padding: 35px;
-    background-color: rgba(181, 0, 172, 0.8);
+    background-color: rgb(60, 109, 214, 0.9);
 }
 
 .section_apropos_content p {
@@ -229,11 +230,12 @@ header {
 }
 
 #apropos_bloc .section_title_content {
-    background-color: rgba(113, 28, 183, 0.9);
+    background-image: linear-gradient(rgba(29, 28, 28, 0.9), rgba(10, 10, 10, 0.9)), url(../images/imgTrame.jpg);
 }
 
+
 .cv_btn_square {
-    background-color: rgba(207, 74, 74, 1);
+    background-color: rgba(113, 28, 183, 1);
 }
 
 .cv_btn {
@@ -253,11 +255,11 @@ header {
 
 /*////////////////////////////////SERVICES/////////////////////////*/
 #services_bloc {
-    background-image: linear-gradient(rgba(254, 48, 49, 0.5), rgba(255, 215, 43, 0.6));
+    background-image: linear-gradient(rgba(254, 48, 49, 0.5),rgba(113, 28, 183, 0.5) );
 }
 
 #services_bloc .section_title_content {
-    background-color: rgba(207, 74, 74, 0.9);
+    background-color: rgb(60, 109, 214, 0.9);
 }
 
 .section_services {
@@ -268,7 +270,6 @@ header {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    height: 120px;
     width: 70vw;
 }
 
@@ -276,9 +277,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10%;
-    height: 120px;
-    background-color: rgba(255, 170, 43, 0.7);
+    width: 20%;
+    background-color: rgba(113, 28, 183, 0.9);
 }
 
 .services_text {
@@ -286,7 +286,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 80%;
     padding: 20px;
     background-color: white;
     color: black;
@@ -295,11 +295,11 @@ header {
 
 /*////////////////////////////////COMPETENCES/////////////////////////*/
 #competences_bloc {
-    background-image: linear-gradient(rgba(255, 215, 43, 0.6), rgba(33, 124, 36, 0.5));
+    background-image: linear-gradient(rgba(113, 28, 183, 0.5), rgba(254, 48, 49, 0.5));
 }
 
 #competences_bloc .section_title_content {
-    background-color: rgba(248, 164, 55, 0.9);
+    background-color: rgb(60, 109, 214, 0.9);
 }
 
 .comp_tech_bloc {
@@ -337,7 +337,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(248, 164, 55);
+    background-color: rgba(113, 28, 183);
     z-index: 2;
     pointer-events: none;
     transition: all ease 1s;
@@ -415,11 +415,11 @@ header {
 
 /*////////////////////////////////PORTEFOLIO/////////////////////////*/
 #portefolio_bloc {
-    background-image: linear-gradient(rgba(33, 124, 36, 0.5), rgba(60, 109, 214, 0.6));
+    background-image: linear-gradient(rgba(254, 48, 49, 0.5),rgba(113, 28, 183, 0.5) );
 }
 
 #portefolio_bloc .section_title_content {
-    background-color: rgba(109, 180, 111, 0.9);
+    background-color: rgb(60, 109, 214, 0.9);
 }
 
 .portefolio_current {
@@ -443,7 +443,7 @@ header {
     justify-content: center;
     height: 60%;
     width: 75%;
-    background-color: rgba(61, 75, 105, 1);
+    background-color: rgba(60, 109, 214, 0.9);
 }
 
 .portefolio_current h2 {
@@ -465,7 +465,7 @@ header {
     height: 0;
     right: 0;
     border-top: 35px solid transparent;
-    border-right: 25px solid rgba(255, 215, 43, 0.6);
+    border-right: 25px solid rgba(254, 48, 49, 1);
     border-bottom: 35px solid transparent;
     position: absolute;
 }
@@ -490,7 +490,7 @@ header {
 }
 
 .link_portfolio_btn .btn_square {
-    background-color: rgba(109, 180, 111, 0.8);
+    background-color: rgba(113, 28, 183, 0.9);
 }
 
 .portefolio_list_content {
@@ -540,7 +540,7 @@ figcaption h3 {
 
 .portefolio_project:hover figcaption {
     opacity: 1;
-    background-color: rgba(61, 75, 105, 1);
+    background-color:   rgba(60, 109, 214);
 }
 
 #elem_pagination_pages {
@@ -553,13 +553,13 @@ figcaption h3 {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: rgba(255, 215, 43, 0.6);
+    background-color: rgb(207, 74, 74);
     margin: 5px;
     cursor: pointer;
 }
 
 .page_active {
-    background-color: rgb(207, 74, 74);
+    background-color:  rgba(60, 109, 214);
 }
 
 .elem_invisible {

@@ -23,7 +23,9 @@
         margin-bottom: 20px;
         margin-top: 25px;
     }
-
+    .revealCategoryTitle {
+        transform: translateX(0);
+      }
 }
 
 /*////////////////////////////////HEADER/////////////////////////*/
@@ -132,6 +134,7 @@
 }
 
 /*////////////////////////////////SERVICES////////////////////////////*/
+
 @media all and (max-device-width: 768px) {
     .services_article {
         width: 90%;
@@ -147,18 +150,33 @@
 }
 
 /*////////////////////////////////COMPETENCES/////////////////////////*/
-@media all and (max-device-width: 768px) {
+
+@media all and (max-device-width: 1200px){
+    .comp_tech_content{
+        width: 180px;
+        height: 380px;  
+    }
+    .comp_tech_text{
+        width: 180px;
+        height: 380px;
+    } 
+    .comp_tech_text p{
+        font-size: 0.8em;
+    }
+    .comp_tech_bloc {
+        flex-flow: row wrap;
+        width: 53%;
+    }
+}
+@media all and (max-device-width: 815px) {
     .competences_bloc_content {
         flex-direction: column;
     }
 
-    .comp_tech_bloc {
-        flex-flow: row wrap;
-        width: 80%;
-    }
 
     .comp_tech_content {
         margin-bottom: 10px;
+        margin-right: 38px;
     }
 
     .comp_fw_bloc {
@@ -166,8 +184,29 @@
         width: 100%;
         margin-top: 10px;
     }
+    .comp_tech_bloc {
+        width: 90%;
+    }
 }
-
+@media all and (max-device-width: 768px){
+    .comp_tech_bloc {
+        width: 90%;
+    }
+    .comp_tech_content {
+        margin-right: 42px;
+    }
+}
+@media all and (max-device-width: 506px){
+    .comp_tech_content {
+        margin-right: 0;
+    }
+}
+@media all and (max-device-width: 440px){
+    .comp_fw_content{
+        width: 90px;
+        height: 90px;
+    }
+}
 /*////////////////////////////////PORTEFOLIO/////////////////////////*/
 
 
@@ -188,7 +227,8 @@
     }
 
     .portefolio_bloc_content {
-        height: 80vh;
+        height: 100vh;
+        margin: 0;
     }
 
     .portefolio_project {
@@ -227,9 +267,6 @@
 }
 
 @media all and (max-device-width: 375px) {
-    .portefolio_bloc_content {
-        height: 100vh;
-    }
 
     .portefolio_list {
         flex-direction: column;
@@ -237,7 +274,7 @@
     }
 
     .portefolio_project {
-        width: 58vw;
+        width: 50vw;
     }
 }
 

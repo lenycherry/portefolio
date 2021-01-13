@@ -56,6 +56,7 @@
     transition: 1s;
 }
 /*////////////////////////////////CATEGORY TITLE/////////////////////////*/
+
 .revealCategoryTitle {
   transform: translateX(-100%);
 }

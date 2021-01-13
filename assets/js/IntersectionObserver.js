@@ -29,6 +29,4 @@ class MyObserver {
     }
 }
 
-let openTitleObserver = new MyObserver('openTitle', 'openTitleLoaded')
-let revealTitleObserver = new MyObserver('revealTitle', 'revealTitleLoaded')
-let revealCategoryTitleObserver = new MyObserver('revealCategoryTitle', 'revealCategoryTitleLoaded')
+
